@@ -24,6 +24,7 @@ enum DeviceType: String {
     case iPhone6Plus
     case iPad
     case iPadPro
+    case iTV
     case Unknown
 }
 
@@ -43,6 +44,7 @@ extension UIDevice {
         if isPadPro()     { return DeviceType.iPadPro     }
         if isPad()        { return DeviceType.iPad        }
         if isPhone()      { return DeviceType.iPhone      }
+        if isTV()         { return DeviceType.iTV         }
         return DeviceType.Unknown
     }
 
@@ -51,11 +53,11 @@ extension UIDevice {
     }
 
     class func isPad() -> Bool {
-        return UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad
+        return UIDevice.currentDevice().userInterfaceIdiom == .Pad
     }
     
     class func isTV() -> Bool {
-        return UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.TV
+        return UIDevice.currentDevice().userInterfaceIdiom == .TV
     }
     
     class func isPhone4() -> Bool {
