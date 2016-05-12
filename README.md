@@ -24,5 +24,6 @@ Available types:
 	    case iPhone6Plus
 	    case iPad
 	    case iPadPro
+	    case iTV
 	    case Unknown
 	}
