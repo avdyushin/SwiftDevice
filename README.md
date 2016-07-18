@@ -1,5 +1,9 @@
 # SwiftDevice
+
+Project has been moved to [SwiftExtensions](https://github.com/avdyushin/SwiftExtensions)
+
 UIDevice extension
+
 
 Usage:
 
